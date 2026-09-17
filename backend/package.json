@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "test": "jest --runInBand",
+    "test": "jest --runInBand --verbose --forceExit --testTimeout=60000",
     "prisma:generate": "prisma generate --schema=prisma/schema.prisma",
     "prisma:format": "prisma format --schema=prisma/schema.prisma",
     "prisma:validate": "prisma validate --schema=prisma/schema.prisma",
